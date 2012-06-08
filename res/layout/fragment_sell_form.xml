@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/sell_form_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/repeat_background"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/FrameLayout01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bikes_bg_texture"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:id="@+id/standardPremiumLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/add1PictureButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/ad_img1"
+                        android:clickable="true"
+                        android:drawableBottom="@drawable/btn_add1picture"
+                        android:onClick="onAddOnePicBtnClk" android:paddingBottom="10dp"/>
+
+                    <TextView
+                        android:id="@+id/addPicturesButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/ad_img2"
+                        android:clickable="true"
+                        android:drawableBottom="@drawable/btn_addmorepictures"
+                        android:onClick="onAddManyPicsBtnClk" android:paddingBottom="10dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/premiumPicsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/premium_bg"
+                    android:gravity="center"
+                    android:orientation="vertical" android:visibility="gone">
+
+                    <com.riktamtech.android.sellabike.widget.PhotosGrid
+                        android:id="@+id/photosGrid1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000" />
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/btn_addeditpictures"
+                        android:onClick="onAddManyPicsBtnClk" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/bike_details_section"
+                style="@style/header_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bike_details" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_large"
+                android:padding="10dp" >
+
+                <com.riktamtech.android.sellabike.widget.RegEditText
+                    android:id="@+id/regEditText"
+                    android:textSize="24sp"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/yellow_box"
+                    android:gravity="center"
+                    android:maxLength="8"
+                    android:maxLines="2"
+                    android:imeActionLabel="Go"
+                    android:padding="5dp" android:inputType="textMultiLine|textVisiblePassword" android:lines="2" android:lineSpacingMultiplier="1.4"/>
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/bike_registration"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/dark_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/makeLayout"
+                style="@style/table_cell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView15"
+                    style="@style/table_cell_col1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/make" />
+
+                <com.riktamtech.android.sellabike.widget.PickerSpinner
+                    android:id="@+id/makePickerSpinner"
+                    style="@style/table_cell_col2.arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/modelLayout"
+                style="@style/table_cell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView16"
+                    style="@style/table_cell_col1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/model" />
+
+                <com.riktamtech.android.sellabike.widget.PickerSpinner
+                    android:id="@+id/modelPickerSpinner"
+                    style="@style/table_cell_col2.arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/engineSizeLayout"
+                style="@style/table_cell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView17"
+                    style="@style/table_cell_col1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/engine_size" />
+
+                <com.riktamtech.android.sellabike.widget.PickerSpinner
+                    android:id="@+id/EngineSizePickerSpinner"
+                    style="@style/table_cell_col2.arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/colorLayout"
+                style="@style/table_cell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView017"
+                    style="@style/table_cell_col1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/color" />
+
+                <com.riktamtech.android.sellabike.widget.PickerSpinner
+                    android:id="@+id/colorPickerSpinner"
+                    style="@style/table_cell_col2.arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/yearLayout"
+                style="@style/table_cell.Bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView18"
+                    style="@style/table_cell_col1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/year" />
+
+                <TextView
+                    android:id="@+id/yearTextView"
+                    style="@style/table_cell_col2.arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout9"
+                style="@style/table_cell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/textView10"
+                    style="@style/table_cell_col1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mileage" />
+
+                <EditText
+                    android:id="@+id/mileageEditText"
+                    style="@style/smallEdittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:inputType="number" android:imeOptions="actionDone"/>
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/miles" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bikeFeaturesLayout"
+                style="@style/table_cell.Bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/textView12"
+                    style="@style/table_cell_col1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bike_features" />
+
+                <TextView
+                    android:id="@+id/bikeFeaturesTextView"
+                    style="@style/table_cell_col2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/static_6"
+                    android:textColor="@color/orange" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_right" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ad_details_section"
+                style="@style/header_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/ad_details" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_large"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/table_cell_col1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/headline" />
+
+                <EditText
+                    android:id="@+id/headlineEditText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input"
+                    android:imeOptions="actionDone" android:maxLength="256">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_large"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/textView7"
+                    style="@style/table_cell_col1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description" />
+
+                <EditText
+                    android:id="@+id/descriptionEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_area"
+                    android:maxLines="3"
+                    android:scrollHorizontally="true"
+                    android:scrollbars="vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/textView8"
+                    style="@style/table_cell_col1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price" />
+
+                <EditText
+                    android:id="@+id/priceEditText"
+                    style="@style/smallEdittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number" android:imeOptions="actionDone"/>
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/pounds" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/seller_details_section"
+                style="@style/header_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/seller_details" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                style="@style/table_cell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:onClick="tblRowClk" android:clickable="true">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/table_cell_col1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/seller_type" android:clickable="false"/>
+
+                <com.riktamtech.android.sellabike.widget.PickerSpinner
+                    android:id="@+id/sellerTypePickerSpinner"
+                    style="@style/table_cell_col2.arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:text="@string/privateLabel" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_contact_details"
+                style="@style/table_cell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/contactDetailsTextView"
+                    style="@style/table_cell_col1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/phone_icon"
+                    android:text="@string/contact_details" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                style="@style/table_cell.Bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/locationTextView"
+                    style="@style/table_cell_col1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/location_icon"
+                    android:onClick="showMapFragment"
+                    android:text="@string/location" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <Button
+                    android:id="@+id/saveButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_saveasdraft" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/sendButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_submit_only" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

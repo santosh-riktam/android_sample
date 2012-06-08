@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/premiumAdTopLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/premium_picture_bg" >
+
+    <LinearLayout
+        android:id="@+id/premiumBikeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="bikeClicked"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" android:layout_centerHorizontal="false">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/bike1" />
+
+        <TextView
+            android:id="@+id/textView1_premiumads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="2"
+            android:maxLines="2"
+            android:text="Triumph Daytona 765 Mint condition"
+            android:textColor="#ffffff"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2_premiumads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="2005, 16,000 miles"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3_premiumads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\u00A3 6,995"
+        android:textColor="#ffffff"
+        android:textSize="12dp"
+        android:textStyle="bold" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginBottom="8dp" android:layout_below="@id/premiumBikeLayout" android:gravity="bottom"/>
+
+</RelativeLayout>

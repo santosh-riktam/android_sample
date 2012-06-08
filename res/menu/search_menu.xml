@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/item_myads"
+        android:icon="@drawable/my_ads"
+        android:title="@string/my_ads" >
+        
+    </item>
+    <item
+        android:id="@+id/item_savedBikes"
+        android:icon="@drawable/saved_bike"
+        android:title="@string/saved_bikes">
+    </item>
+    <item
+        android:id="@+id/item_savedSearches"
+        android:icon="@drawable/saved_search"
+        android:title="@string/saved_searches">
+    </item>
+   
+</menu>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@id/nav_bar"
+        style="@style/navbar_style"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" >
+
+        <ImageView
+            android:id="@+id/ImageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/title_icon" />
+
+        <TextView
+            android:id="@+id/navBarRightSeperator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/navBarRightButton"
+            android:background="@drawable/nav_seperator" />
+
+        <Button
+            android:id="@+id/navBarRightButton"
+            style="@style/navbar_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:onClick="onDoneClk"
+            android:text="@string/done" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.google.android.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:apiKey="0YcBsFeSZkz8vZ3eP7J0kVn9HDcYZAGkx65vIkg"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/drag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/map_pin"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/postcodeEntryLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/map_search_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <ImageButton
+                android:id="@+id/ImageButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_my_location"
+                android:onClick="myLoc" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/map_search"
+                android:drawableLeft="@drawable/map_search_icon"
+                android:drawablePadding="8dp"
+                android:hint="@string/current_location"
+                android:imeActionLabel="Go"
+                android:imeOptions="actionGo"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:textColorHint="@color/orange_dark"
+                android:textSize="14sp" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

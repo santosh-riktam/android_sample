@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="FBAppId">355843647816980</string>
+    <string name="twitter_callback">twitter-callback:///</string>
+    <string name="twitpic_api_key">8ac1bddc7880e5aa2598309b82f0e023</string>
+    <string name="twitter_consumer_key">yhCCoUipzareZHUfevPA</string>
+    <string name="twitter_consumer_secret">5Tnzmm5uoDfWHvW0LAEoSOlh9nFIcCNvFvhdTyfXFs</string>
+    <string name="ok">Ok</string>
+    <string name="message">Message</string>
+    <string name="your_name">Your name</string>
+    <string name="your_email">Your e-mail</string>
+    <string name="cancel">Cancel</string>
+    <string name="hello">Hello World, SellABikeActivity!</string>
+    <string name="app_name">Sell A Bike</string>
+    <string name="frg_tab_tag">frg_tab_tag</string>
+    <string name="select_network">Select network</string>
+    <string name="setting_header">Settings</string>
+    <string name="signin_fb">Sign in with Facebook</string>
+    <string name="signin_tw">Sign in with Twitter</string>
+    <string name="signout_fb">Sign out of Facebook</string>
+    <string name="signout_tw">Sign out of Twitter</string>
+    <string name="manage_my_ads">Manage my Ads</string>
+    <string name="mail_thoughts">Mail us your thoughts</string>
+    <string name="static_news_details">"Ducati has released the following pictures of Valentino Rossi riding the new 1198 superbike this afternoon at Misano. The multiple world champ is reportedly using the WSB testing... session to viIiit \n\n a orci posuere mollis. Curabitur malesuada luctus elit eu ultrices. Praesent a lectus est. Duis eget neque vel odio convallis fermentum.</string>
+    <string name="static_news_details_title">Rossi test 1198</string>
+    <string name="loremipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed est quis nisi cursus consectetur in a enim. Fusce ante sem, gravida Id tincidunt eget, vehicula ac ligula. Pellentesque varius posuere elit. Praesent volutpat gravida condimentum. Suspendisse gravida dapibus sodales.</string>
+    <string name="Triumph">Triumph Daytona 675 Mint condition - £4,595 ono</string>
+    <string name="static_bike_details">2005, 675cc, 16,000 miles, 12 months MOT, ABS. 1 owner </string>
+    <string name="features">Features</string>
+    <string name="distance">Distance - </string>
+    <string name="viewonmap">View on map</string>
+    <string name="favorites">Favorites</string>
+    <string name="myads">MyAds</string>
+    <string name="any">Any</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="email">Email</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="advanced_search">Advanced search</string>
+    <string name="distance_upto_miles">Distance up to (miles)</string>
+    <string name="min">Min</string>
+    <string name="two">(2)</string>
+    <string name="keywords">keywords</string>
+    <string name="hint_tdi">e.g TDi Spor</string>
+    <string name="refine_your_search">Refine your search by adding filters</string>
+    <string name="premium_ad">PREMIUM AD</string>
+    <string name="drag_help">Drag point to adjust location</string>
+    <string name="confirm_del_fav">Are you sure you want to remove the bike from favorites?</string>
+    <string name="confirm_clear_favs">Are you sure you want to clear the favorites list?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="no_fav_bikes">No bikes in Favorites list</string>
+    <string name="no_my_ads">No bikes in MyAds list</string>
+    <string name="no_saved_searches">No Saved searches</string>
+
+    <string-array name="static_features_array">
+        <item>1 Owner</item>
+        <item>2 Owners</item>
+        <item>3 Owners</item>
+        <item>12 Month MOT</item>
+        <item>9+ Month MOT</item>
+        <item>6+ Month MOT</item>
+        <item>3+ Month MOT</item>
+        <item>12 Month tax</item>
+        <item>9+ Month tax</item>
+        <item>6+ Month tax</item>
+        <item>3+ Month tax</item>
+        <item>ABS</item>
+        <item>Alarm</item>
+        <item>Minor damage</item>
+        <item>Some damage</item>
+        <item>Scratch marks</item>
+        <item>Accident damage</item>
+        <item>Alarm</item>
+        <item>Bike cover</item>
+        <item>Crash bungs</item>
+        <item>Excellent condition</item>
+        <item>FSH (Full service history)</item>
+        <item>Garaged</item>
+        <item>Good condition</item>
+        <item>Heated grips</item>
+        <item>Immobiliser</item>
+        <item>Less than 5k miles</item>
+        <item>Less than 10k miles</item>
+        <item>Less than 15k miles</item>
+        <item>Less than 20k miles</item>
+        <item>Less than 25k miles</item>
+        <item>Lots of extras</item>
+        <item>Manual</item>
+        <item>New</item>
+        <item>New tyres</item>
+        <item>PSH (Part service history)</item>
+        <item>Paddock stand</item>
+        <item>Racing exhaust</item>
+        <item>Seat cowel</item>
+        <item>Security markings</item>
+        <item>Some wear &amp; Tear</item>
+        <item>Tracker</item>
+        <item>Warranty</item>
+        <item>P/X available</item>
+    </string-array>
+
+    <string name="fetching_bikes">Fetchng bikes...</string>
+    <string name="premium_picture">PREMIUM PICTURE</string>
+    <string name="caption">Caption</string>
+    <string name="caption_hint">e.g. BMW from side</string>
+    <string name="seller_details">Seller details</string>
+    <string name="seller_type">Seller type</string>
+    <string name="privateLabel">Private</string>
+    <string name="contact_details">Contact details</string>
+    <string name="adjust_contact_details">Adjust contact details</string>
+    <string name="adjust_location">Edit location</string>
+    <string name="location">Location</string>
+    <string name="headline">Headline</string>
+    <string name="description">Description</string>
+    <string name="price">Price</string>
+    <string name="pounds">pounds</string>
+    <string name="ad_details">Ad details</string>
+    <string name="miles">miles</string>
+    <string name="bike_features">Bike Features</string>
+    <string name="static_6">(6)</string>
+    <string name="bike_details">Bike details</string>
+    <string name="bike_registration">Bike registration</string>
+    <string name="make">Make</string>
+    <string name="model">Model</string>
+    <string name="color">Colour</string>
+    <string name="engine_size">Engine Size</string>
+    <string name="year">Year</string>
+    <string name="colour">Colour</string>
+    <string name="age">Age</string>
+    <string name="mileage">Mileage</string>
+    <string name="sellertype">Seller Type</string>
+    <string name="static_honda">Honda</string>
+    <string name="static_cbr">CBR1000</string>
+    <string name="static_600">600 cc</string>
+    <string name="static_red">Red</string>
+    <string name="static_2005">2005</string>
+    <string name="my_ads">My ads</string>
+    <string name="saved_bikes">Saved bikes</string>
+    <string name="saved_searches">Saved searches</string>
+    <string name="my_drafts">My drafts</string>
+    <string name="Ducati">Ducati has released the following pictures of Valentino Rossi riding the new 1198 superbike this afternoon at Misano. The multiple world champ is reportedly using the WSB testing... </string>
+    <string name="list_reviews">The Crossrunner has already proved controversial for being passed off ass a new bike... </string>
+
+    <string-array name="static_picker_items">
+        <item>Adley</item>
+        <item>Aeon</item>
+        <item>Ariel</item>
+        <item>Baotian</item>
+        <item>BMW</item>
+        <item>Cannondale</item>
+        <item>Daelim</item>
+        <item>Escoota</item>
+        <item>Garelli</item>
+        <item>Hyosung</item>
+        <item>Jincheng</item>
+        <item>Modenas</item>
+        <item>Motobecane</item>
+        <item>Quadzilla</item>
+        <item>Royal Enfield</item>
+        <item>Suzuki</item>
+        <item>Triumph</item>
+        <item>Voxan</item>
+        <item>Yamaha</item>
+        <item>Zundapp</item>
+    </string-array>
+
+    <string name="clear">Clear </string>
+    <string name="done">Done</string>
+    <string name="reset">Reset</string>
+    <string name="back">Back</string>
+    <string name="drafts">Drafts</string>
+    <string name="save">Save</string>
+    <string name="share">Share</string>
+    <string name="sell">Sell</string>
+    <string name="static_honda_cbr">Honda CBR250R (2011-current)</string>
+    <string name="static_excellent">Excellent for urban commuting</string>
+    <string name="static_slightly">Slightly underpowered for longer journeys</string>
+    <string name="our_score">Our score</string>
+    <string name="overview">Overview</string>
+    <string name="static_text_overview">"Motorcycling needs new blood to ensure survival. Honda’s take on this is to attract people into motorcycling with a cheap, honest and stylish workhorse — and the CBR25OR is it. This all-new machine is not just suited to restricted cat’ A licence holders, but also anyone who wants a simple, easy to ride, modern-dressed machine capable of returning high mpg figures. "</string>
+    <string name="engine">Engine</string>
+    <string name="static_text_engine">"The CBR isn’t fast-fast. With 26bhp at the crank it was never going to be furious. Instead it’s all about pleasure riding, looking good and, more importantly, gaining experience before moving further up the capacity ladder. But it would have been good if Honda eked out another 7bhp to meet the 33bhp limit. "</string>
+
+    <string-array name="contact_seller_items">
+        <item>Call</item>
+        <item>Email</item>
+    </string-array>
+
+    <string name="options">Options</string>
+    <string name="select_option">Please select option</string>
+    <string name="title">Saved Search</string>
+
+    <string-array name="addPictureOptions">
+        <item>Delete image</item>
+        <item>Library</item>
+        <item>Take a photo</item>
+    </string-array>
+    <string-array name="ages">
+        <item> Any</item>
+        <item>upto 1 year</item>
+        <item>upto 2 years</item>
+        <item>upto 3 years</item>
+        <item>upto 4 years</item>
+        <item>upto 5 years</item>
+        <item>upto 6 years</item>
+        <item>upto 7 years</item>
+        <item>upto 8 years</item>
+        <item>upto 9 years</item>
+        <item>upto 10 years</item>
+        <item>over 10 years</item>
+    </string-array>
+    <string-array name="mileages">
+        <item> Any</item>
+        <item>upto 5k miles</item>
+        <item>upto 10k miles</item>
+        <item>upto 20k miles</item>
+        <item>upto 40k miles</item>
+        <item>upto 60k miles</item>
+        <item>upto 80k miles</item>
+        <item>upto 100k miles</item>
+        <item>over 100k miles</item>
+    </string-array>
+    <string-array name="seller_types">
+        <item> Any</item>
+        <item>Private</item>
+        <item>Bussiness</item>
+    </string-array>
+
+    <string name="current_location">Current location</string>
+    <string name="alert">Alert</string>
+
+</resources>

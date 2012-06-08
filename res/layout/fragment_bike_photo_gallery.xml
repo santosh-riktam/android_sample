@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/repeat_background" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:background="@color/gray"
+        android:orientation="vertical" android:gravity="center_horizontal">
+
+        <com.riktamtech.android.sellabike.widget.CircleIndicator
+            android:id="@+id/circleIndicator1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/caption_Bike_photos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Yamaha R125 in Red mint condition \u00A3 3,595 ono "
+            android:textColor="#ffffff"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

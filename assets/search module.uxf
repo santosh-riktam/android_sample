@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>300</x>
+      <y>70</y>
+      <w>150</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>SearchFromFrg.
+--
+searchParamDAO:SearchParamDAO
+--
+SearchFromFrg(SearchParamDAO)
+--
+- UI to capture search params
+- UI to display bike ads
+- insert location functionality
+- communicate with SearchAct.
+(get searchDAO and save SearchDAO when exiting)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>110</x>
+      <y>60</y>
+      <w>170</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>SearchAct
+--
+searchParamDao:SearchParamDAO
+--
+--
+logic for swapping fragments &amp; holding data
+method saveSearch(SearchDAO)
+call db manager method
+handle disabling menu options</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>90</x>
+      <y>130</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>BikeAdsParser</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>80</x>
+      <y>200</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>BikeDao
+--
+--
+--
+encapsulate bikes </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>500</x>
+      <y>70</y>
+      <w>130</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>RangeSeekbar
+--
+*onRangeChangeListener:OnRangeChangeListener*
+
+--
+--
+
+notify percentage based on thumb movement</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>220</x>
+      <y>210</y>
+      <w>190</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>SearchResultAdap.
+--
+--
+--
+
+accept AL of BikeDAOs and populate list rows
+span title
+
+communicate with SearchAct on button click</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>250</x>
+      <y>130</y>
+      <w>200</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>SearchResultFrg
+--
+--
+--
+
+comm. with SearchAct ( get SearchDAO )
+update UI based on SearchDAO
+react to on list item click </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>430</x>
+      <y>200</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>ServiceRequestBuilder
+--
+--
+--
+getBikes(BikeDAO): String
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>90</x>
+      <y>260</y>
+      <w>180</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>SearchResultParser
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>350</x>
+      <y>260</y>
+      <w>180</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>DBManager
+--
+--
+saveSearch(SearchDAO): int throws execption
+addFavourites(BikeDAO):int
+*deleteFav(BikeDAO): int*
+*deleteSavedSearch():int
+getFavourites():List
+getSavedSearches():List
+
+--
+should save bike,search
+delete fav,search
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>240</x>
+      <y>350</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>MapLocationAct.
+--
+--
+--
+just display point on map no interactivity
+(for view on map)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>110</x>
+      <y>350</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>BikeDetailsFrg.
+--
+--
+--
+"gallery of images
+UI based on BikeDAO and SearchDAO data
+view on map
+save - favorriting - save to db
+sharing fb/twiiter etc"
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>440</x>
+      <y>350</y>
+      <w>180</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>BikePhotoGalleryFragment
+--
+
+--
+
+--
+
+--
+
+UI based on BikeDAO </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>130</x>
+      <y>430</y>
+      <w>210</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>FavoritesFragment
+--
+
+--
+
+--
+INTERFACE
+onFavVLin
+--
+show favs.
+click, remove, clear events
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>400</x>
+      <y>420</y>
+      <w>180</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>FavoritesAdap.
+--
+--
+--
+cursor adapter - data is from DB
+span text
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>150</x>
+      <y>490</y>
+      <w>180</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>SavedSearchFragment
+--
+--
+--
+show saved searches.
+click, remove, clear events
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>410</x>
+      <y>490</y>
+      <w>180</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>SavedSearchAdap.
+--
+--
+--
+cursor adapter - data is from DB
+span text
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>490</x>
+      <y>120</y>
+      <w>140</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>SearchParamDAO
+--
+--
+--
+encapsulate search params</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

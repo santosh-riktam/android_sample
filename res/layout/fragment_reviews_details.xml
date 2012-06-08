@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/texture_app_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/linearLayout1_ref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/news_reviews_tab_layout" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/repeat_background"
+        android:padding="8dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/static_honda_cbr"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/orange"
+                android:textStyle="bold" />
+            <!--
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/large_bike" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    style="@style/bike_features_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="90" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        style="@style/bike_features_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/plus"
+                        android:text="@string/static_excellent" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        style="@style/bike_features_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/minus"
+                        android:text="@string/static_slightly" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    style="@style/bike_features_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:gravity="top"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        style="@style/bike_features_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/our_score" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="17dp"
+                        android:isIndicator="true"
+                        android:progressDrawable="@drawable/custom_rating_bar"
+                        android:rating="4" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/bike_features_text.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/overview" />
+
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/bike_features_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/static_text_overview" />
+
+            <TextView
+                android:id="@+id/textView7"
+                style="@style/bike_features_text.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/engine" />
+
+            <TextView
+                android:id="@+id/textView8"
+                style="@style/bike_features_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/static_text_engine" />
+            -->
+
+            <WebView
+                android:id="@+id/webView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

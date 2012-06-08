@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="tab_content">tab_content</item>
+    <item name="tab_articles" type="id">tab_articles</item>
+    <item name="tab_sell" type="id">tab_articles</item>
+    <item name="tab_search" type="id">tab_search</item>
+    <item name="tab_settings" type="id">tab_settings</item>
+    <item name="nav_bar" type="id">nav_bar</item>
+    <item type="id" name="ok_button">ok_button</item>
+    <item type="id" name="cancel_button">cancel_button</item>
+    
+</resources>

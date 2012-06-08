@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ash"
+    android:orientation="vertical"
+    android:paddingBottom="5dp" >
+
+    <TextView
+        android:id="@+id/textView1_saved_searches"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/price"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2_saved_searches"
+        style="@style/saved_searches_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textView1_saved_searches"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/price" android:layout_marginRight="120dp"/>
+
+    <TextView
+        android:id="@+id/textView3_saved_searches"
+        style="@style/saved_searches_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textView2_saved_searches"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="120dp"/>
+
+    <TextView
+        android:id="@+id/textView4_saved_searches"
+        style="@style/saved_searches_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textView3_saved_searches"
+        android:text="@string/price" android:layout_alignParentRight="true" android:layout_marginRight="3dp"/>
+
+    <TextView
+        android:id="@+id/textView5_saved_searches"
+        style="@style/saved_searches_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textView3_saved_searches"
+        android:layout_marginLeft="10dp"
+        android:text="@string/price" />
+
+    <TextView
+        android:id="@+id/textView6_saved_searches"
+        style="@style/saved_searches_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textView5_saved_searches"
+        android:layout_marginLeft="10dp"
+        android:text="@string/price" />
+
+    <TextView
+        android:id="@+id/textView7_saved_searches"
+        style="@style/saved_searches_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView6_saved_searches"
+        android:layout_marginLeft="10dp"
+        android:text="@string/price" />
+
+    <TextView
+        android:id="@+id/textView8_saved_searches"
+        style="@style/saved_searches_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textView2_saved_searches"
+        android:text="@string/price" android:layout_alignParentRight="true" android:layout_marginRight="102dp"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arrow_right" />
+
+    <ImageView
+        android:id="@+id/edit_saved_searches"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textView7_saved_searches"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/edit" />
+
+    <ImageView
+        android:id="@+id/remove_saved_searches"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/edit_saved_searches"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/edit_saved_searches"
+        android:src="@drawable/remove2" />
+
+</RelativeLayout>

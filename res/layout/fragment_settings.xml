@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settings_layout"
+    style="@style/settings_top_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/setting_header" 
+        android:paddingLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/facebookTextView"
+        style="@style/settings_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/fb_icon"
+        android:text="@string/signin_fb" android:onClick="onTblRowClick" android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/twitterTextView"
+        style="@style/settings_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/twitter_icon"
+        android:text="@string/signin_tw" android:onClick="onTblRowClick" android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/manageAdsTextView"
+        style="@style/settings_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/manage_adds"
+        android:text="@string/manage_my_ads" android:onClick="onTblRowClick" android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/mailThoughtsTextView"
+        style="@style/settings_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/mail"
+        android:text="@string/mail_thoughts" android:onClick="onTblRowClick" android:clickable="true"/>
+
+</LinearLayout>

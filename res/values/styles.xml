@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="noAnimTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+    </style>
+
+    <style name="navbar_style">
+        <item name="android:background">@drawable/nav_ba_bgr</item>
+    </style>
+
+    <style name="navbar_button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:background">@drawable/btn_transparent</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="seekbar_bg">
+        <item name="android:drawableRight">@drawable/seekbar_bg</item>
+    </style>
+
+    <style name="any_details">
+        <item name="android:textColor">@color/navy_blue</item>
+        <item name="android:drawableRight">@drawable/arrow_orange</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+    <style name="feature_details">
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:drawableRight">@drawable/arrow_right</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+    <style name="bike_details">
+        <item name="android:textColor">#e2e2e2</item>
+        <item name="android:background">@drawable/header_1</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="header_text" parent="@android:style/TextAppearance.Small">
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textColor">@color/header_text</item>
+        <item name="android:background">@drawable/header_1</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="settings_top_layout">
+        <item name="android:background">@drawable/repeat_background</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">20dp</item>
+    </style>
+
+    <style name="settings_row" parent="android:Widget.TextView">
+        <item name="android:background">@drawable/cell1</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:drawableRight">@drawable/arrow_right</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="cust_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowTitleStyle">@style/dialog_title_style</item>
+        <item name="android:windowBackground">@drawable/repeat_background</item>
+    </style>
+
+    <style name="dialog_title_style" parent="android:Widget.TextView">
+        <item name="android:background">@android:color/black</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <style name="table_cell">
+        <item name="android:background">@drawable/cell1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="table_cell.Bottom">
+        <item name="android:background">@drawable/cell_bottom</item>
+    </style>
+
+    <style name="table_cell_col1" parent="android:Widget.TextView">
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="table_cell_col2" parent="android:Widget.TextView">
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:textColor">@color/navy_blue</item>
+    </style>
+
+    <style name="table_cell_col2.arrow">
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="fragment_bike_details_row_two">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="bike_features_text">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+
+    <style name="bike_features_text.Large">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="bike_features_layout">
+        <item name="android:background">@color/ash</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="saved_searches_textView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="smallEdittext" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/miles</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearlayoutvertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/texture_3"
+        android:orientation="vertical" >
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/bikephotosLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/imageView1_favorite_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/imageView2_favorite_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/imageView3_favorite_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/imageView4_favorite_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/imageView5_favorite_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/imageView6_favorite_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/ImageView7_favorite_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/ImageView8_favorite_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/ImageView9_favorite_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <RadioGroup
+            android:id="@+id/radioGroup_favorite_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio01_favorite_details"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/dot_select_page7"
+                android:button="@null"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radio02_favorite_details"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/dot_unselect_page7"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/radio03_favorite_details"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/dot_unselect_page7"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/radio04_favorite_details"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/dot_unselect_page7"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/radio05_favorite_details"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/dot_unselect_page7"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/radio06_favorite_details"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/dot_unselect_page7"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/radio07_favorite_details"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/dot_unselect_page7"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/radio08_favorite_details"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/dot_unselect_page7"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/radio09_favorite_details"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@drawable/dot_unselect_page7"
+                android:button="@null" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/linearver1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/bikenametextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/pricetextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/orange"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="#FF909090" />
+
+            <RelativeLayout
+                android:id="@+id/featuresRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/year_favorite_details"
+                    style="@style/fragment_bike_details_row_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:drawableLeft="@drawable/list_dot_page7"
+                    android:drawablePadding="2dp" />
+
+                <TextView
+                    android:id="@+id/feature_favorite_details"
+                    style="@style/fragment_bike_details_row_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawableLeft="@drawable/list_dot_page7"
+                    android:drawablePadding="2dp"
+                    android:paddingRight="100dp" />
+
+                <TextView
+                    android:id="@+id/engine_favorite_details"
+                    style="@style/fragment_bike_details_row_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/year_favorite_details"
+                    android:layout_below="@id/year_favorite_details"
+                    android:drawableLeft="@drawable/list_dot_page7"
+                    android:drawablePadding="2dp" />
+
+                <TextView
+                    android:id="@+id/miles_favorite_details"
+                    style="@style/fragment_bike_details_row_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/engine_favorite_details"
+                    android:layout_below="@id/engine_favorite_details"
+                    android:drawableLeft="@drawable/list_dot_page7"
+                    android:drawablePadding="2dp" />
+
+                <TextView
+                    android:id="@+id/abs_favorite_details"
+                    style="@style/fragment_bike_details_row_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/feature_favorite_details"
+                    android:layout_below="@id/feature_favorite_details"
+                    android:drawableLeft="@drawable/list_dot_page7"
+                    android:drawablePadding="2dp" />
+
+                <TextView
+                    android:id="@+id/owner_favorite_details"
+                    style="@style/fragment_bike_details_row_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/abs_favorite_details"
+                    android:layout_below="@+id/abs_favorite_details"
+                    android:drawableLeft="@drawable/list_dot_page7"
+                    android:drawablePadding="2dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="#FF909090" />
+
+            <TextView
+                android:id="@+id/description_favorite_details"
+                style="@style/fragment_bike_details_row_two"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:textSize="12dp" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_gray"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:id="@+id/distance_bikedetails_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textview_distance"
+                        style="@style/fragment_bike_details_row_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/distance_text_favoritedetails"
+                        style="@style/fragment_bike_details_row_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_from_favoritedetails"
+                        style="@style/fragment_bike_details_row_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/viewonmap_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/distance_bikedetails_textview"
+                    android:layout_toRightOf="@+id/viewonmap_imageview"
+                    android:text="@string/viewonmap"
+                    android:textColor="@color/orange"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:id="@+id/viewonmap_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/distance_bikedetails_textview"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/distance_bikedetails_textview"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/view_map" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/texture_2"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/contactSellerView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp"
+                    android:src="@drawable/btn_contactseller" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/contactSellerView"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="5dp" >
+
+                    <ImageView
+                        android:id="@+id/saveforlater_favorite_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="25dp"
+                        android:src="@drawable/btn_saveforlater" />
+
+                    <ImageView
+                        android:id="@+id/share_favorite_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/btn_share" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

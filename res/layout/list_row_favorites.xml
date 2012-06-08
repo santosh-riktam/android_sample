@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cell_top_favorites"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/favouriteBikeImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/bike1_with_border" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="0.7"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TextView1_favorites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Triumph Daytona 675 Mint condition - \u00A3 4,595 ono"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView2_favorites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2005, 675cc, 16,000 miles, 12 months MOT, ABS. 1 owner"
+            android:textColor="@color/gray"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/TextView3_favorites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance - 5 miles"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+
+        <ImageView
+            android:id="@+id/remove_favorites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/remove2" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ImageView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:src="@drawable/arrow_right" />
+
+</LinearLayout>

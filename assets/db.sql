@@ -1,0 +1,11 @@
+CREATE TABLE TBL_COLORS(	COLOR_ID INTEGER NOT NULL,	COLOR_NAME TEXT);
+CREATE TABLE TBL_ENGINES(	ENGINE_ID INTEGER NOT NULL,	ENGINE_NAME TEXT);
+CREATE TABLE TBL_MAKE(	MAKE_ID INTEGER NOT NULL,	MAKE_NAME TEXT);
+CREATE TABLE "TBL_MODELS" ("MODEL_ID" INTEGER NOT NULL ,"MAKE_ID" INTEGER NOT NULL ,"ENGINE_ID" TEXT NOT NULL ,"MODEL_NAME" TEXT);
+CREATE TABLE android_metadata (locale TEXT);
+CREATE TABLE "tbl_bike" ("_id" INTEGER PRIMARY KEY  NOT NULL ,"is_gum_tree" BOOL,"is_premium" BOOL,"bike_name" TEXT,"make_id" INTEGER,"model_id" INTEGER,"engine_size" INTEGER,"engine_id" INTEGER,"seller_id" INTEGER,"color_id" INTEGER,"year" INTEGER,"mileage" INTEGER,"reg_no" TEXT,"features" TEXT,"description" TEXT,"price" INTEGER,"lat" REAL,"lon" REAL,"distance" INTEGER,"first_name" TEXT,"last_name" TEXT,"telephone" TEXT,"email" TEXT,"seller_url" TEXT,"bike_type" INTEGER, "insert_time" INTEGER, "saved_search_id" INTEGER, "draft_name" TEXT);
+CREATE TABLE "tbl_photos" ("_id" INTEGER PRIMARY KEY  NOT NULL ,"bike_id" INTEGER,"photo_caption" TEXT,"photo_url" TEXT);
+CREATE TABLE "tbl_pic" ("pic_id" INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL , "pic_url" TEXT, "pic_caption" TEXT, "is_thumb" INTEGER);
+CREATE TABLE "tbl_search_params" ("_id" INTEGER PRIMARY KEY  NOT NULL ,"color_id" INTEGER NOT NULL ,"make_id" INTEGER NOT NULL ,"model_id" INTEGER NOT NULL ,"engine_id" INTEGER NOT NULL ,"price_min" INTEGER NOT NULL ,"price_max" INTEGER NOT NULL ,"age_id" INTEGER NOT NULL ,"mileage_id" INTEGER NOT NULL ,"seller_id" INTEGER NOT NULL ,"distance_id" INTEGER NOT NULL ,"postcode" TEXT NOT NULL ,"keywords" TEXT,"features" TEXT, saved_search_id INTEGER,"insert_time" INTEGER);
+CREATE TABLE "tbl_thumbs" ("_id" INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL , "bike_id" INTEGER, "thumb_url" TEXT);
+CREATE TABLE "tbl_reviews"("_id" INTEGER NOT NULL,"thumb" TEXT,"title" TEXT,"summary" TEXT,"share_summary" TEXT,"full_text" TEXT);

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="header_text">#e2e2e2</color>
+    <color name="dark_gray">#404040</color>
+    <color name="navy_blue">#162d5e</color>
+    <color name="blackish">#171717</color>
+    <color name="black">#000000</color>
+    <color name="orange">#d83526</color>
+    <color name="premium_bike_caption_color">#b2b2b2</color>
+    <color name="pale_white">#fcfcfc</color>
+
+    <color name="light_gray">#d9d9d9</color>
+    <color name="white">#ffffff</color>
+     <color name="ash">#f4f3f1</color>
+    <color name="gray">#3a3a3a</color>
+    <color name="list_row_seperator_color_gray">#ababab</color>
+    <color name="orange_dark">#FFe46e2e</color>
+    <color name="transparent_black">#80000000</color>
+</resources>

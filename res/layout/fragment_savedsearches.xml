@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/repeat_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/saved_searches"
+            android:textColor="@color/orange"
+            android:textSize="15dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/itemsCountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:text="0 items"
+            android:textColor="@color/dark_gray"
+            android:textSize="13dp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/search_transparent" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/saved_searches_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/list_row_seperator_color_gray"
+        android:dividerHeight="1dp" android:scrollbars="none">
+    </ListView>
+
+</LinearLayout>

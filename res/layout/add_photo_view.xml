@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_photo_view_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/premium_picture_bg"
+    android:gravity="left|top"
+    android:paddingTop="16dp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/premium_picture"
+        android:textColor="@color/pale_white"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/cameraButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/camera"
+            android:contentDescription="@string/caption" />
+
+        <Button
+            android:id="@+id/addPicturesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/btn_addpictures" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/captionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" android:gravity="center" android:paddingBottom="10dp" android:paddingTop="10dp" android:background="@color/transparent_black">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/caption"
+            android:textColor="@color/pale_white"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/textView2"
+            android:background="@android:color/transparent"
+            android:hint="@string/caption_hint"
+            android:maxLength="50"
+            android:singleLine="true"
+            android:textColor="@color/premium_bike_caption_color" android:imeOptions="actionDone">
+        </EditText>
+    </LinearLayout>
+
+</RelativeLayout>

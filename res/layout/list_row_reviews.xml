@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/repeat_favorites_one"
+    android:orientation="vertical" android:paddingBottom="10dp" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingTop="5dp">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/bike1_with_border" android:paddingTop="5dp"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/imageView2"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="Honda VFR800x Crossrunner (2011-current)"
+        android:textColor="@color/orange"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_toLeftOf="@+id/imageView2"
+        android:text="@string/list_reviews"
+        android:textColor="@color/blackish"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/arrow_right" />
+
+</RelativeLayout>
