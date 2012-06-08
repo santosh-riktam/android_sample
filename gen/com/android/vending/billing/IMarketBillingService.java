@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: D:\\santosh\\workspace indigo\\and_sellabike\\src\\com\\android\\vending\\billing\\IMarketBillingService.aidl
+ * Original file: /home/santosh/git-repos/sellabike-git/src/com/android/vending/billing/IMarketBillingService.aidl
  */
 package com.android.vending.billing;
 public interface IMarketBillingService extends android.os.IInterface

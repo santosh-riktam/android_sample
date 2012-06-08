@@ -17,7 +17,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.facebook.android.Util;
 import com.riktamtech.android.sellabike.R;
 import com.riktamtech.android.sellabike.dao.BikeDAO;
 import com.riktamtech.android.sellabike.dao.Photo;
